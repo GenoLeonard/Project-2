@@ -1,17 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #about img, #facts img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        footer img {
+            max-width: 50px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Project 2</h1>
+        <h1>Project 2</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#facts">Facts</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
     <main>
-        <p>This is the main content area of the project. Here, you can add your project details, descriptions, and any other relevant information.</p>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Welcome to my project page. Here, I share my journey and learnings in web design.</p>
+            <img src="https://via.placeholder.com/600x400" alt="About Image">
+        </section>
+        <section id="facts">
+            <h2>Facts About Web Design</h2>
+            <ul>
+                <li>HTML is the standard markup language for creating web pages.</li>
+                <li>CSS is used to control the style and layout of web pages.</li>
+                <li>JavaScript can be used to create dynamic content and interactions.</li>
+            </ul>
+            <img src="https://via.placeholder.com/600x400" alt="Facts Image">
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Project 2. All rights reserved.</p>
+        <p>Contact: <a href="mailto:example@example.com">example@example.com</a></p>
+        <img src="https://via.placeholder.com/50" alt="Logo">
     </footer>
 </body>
 </html>
