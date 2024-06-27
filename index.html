@@ -4,8 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #640d0d;
+            color: #fff;
+            padding: 1rem;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .about-img, .contact-img {
+            width: 300px;
+            display: block;
+            margin: 1rem auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        .contact-form input, .contact-form textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+        }
+</style>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#facts">Facts</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Hello! My name is Geno Leonard. I am a beginner web designer trying to figure it out. I will be graduating with a marketing degree this summer and starting my MBA in the fall.</p>
+            <img src="Images/project 2/project 2/Project-2.png" alt="A picture representing Geno Leonard" class="about-img">
+        </section>
+        <section id="facts">
+            <h2>Web Design Facts</h2>
+            <ul>
+                <li>HTML stands for HyperText Markup Language.</li>
+                <li>CSS stands for Cascading Style Sheets.</li>
+                <li>JavaScript is a programming language that can make web pages interactive.</li>
+                <li>Responsive design ensures web pages look good on all devices.</li>
+                <li>Accessibility is important for allowing all users to interact with a website.</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <img src="https://via.placeholder.com/300" alt="A contact related image" class="contact-img">
+        </section>
+    </main>
+    <footer>
+        <p>Contact me at <a href="mailto:geno@example.com">geno@example.com</a></p>
+        <p>&copy; 2024 Geno Leonard</p>
+    </footer>
 </body>
 </html>
-
